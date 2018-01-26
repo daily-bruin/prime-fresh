@@ -1,0 +1,27 @@
+<articleinfo>
+<p class="article__category">{{ category }}</p>
+<h1 class="article__title">{{ title }}</h1>
+<div class="article__author byline">BY {{ author }}</div>
+<div class="article__issue">{{ issue }}</div>
+
+<div class="flex-container">
+  <div class="row">
+    <div class="column large-1" id="article__social-buttons"></div>
+
+    <div class="column large-11" id="socialimage">
+      <div id="image">
+      <img src="/img/{{ path }}/{{ cover.img }}">
+      </div>
+
+      {# <div class="columns small-12 medium-8"> #}
+      <div class="article__content">
+        {% include "../partials/fillercontent.html" %}
+      </div>
+      {# </div> #}
+
+    </div>
+  </div>
+</div>
+</articleinfo>
+
+{% include "./socials.html" %}
